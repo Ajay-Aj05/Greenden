@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"> 
-    <title>Document</title>
+    <link rel="icon" id="icon" href="image/pngtree-green-logo-image_2296527-removebg-preview.png" type="image/png">
+    <title>Products</title>
 </head>
 <body>
      <!--Responsive navbar-->
      <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10" >
-        <h1 class="text-2xl">Greenden</h1>
+        <div class="flex gap-0.8">
+        <img class="w-9 h-8" src="image/pngtree-green-logo-image_2296527-removebg-preview.png" alt="logo">
+        <h1 class="text-2xl font-bold">Greenden</h1>
+        </div>
+        <div>
         <svg class="w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
@@ -25,11 +30,12 @@
                 <a class="hover:underline hover:text-black" href="contact.html">contact</a>
             </li>
         </ul>
+        </div>
     </nav>
     <!--home page-->
    <section class="text-center">
     <h1 class="font-bold mt-6 text-3xl p-2">Our Products</h1>
-    <input class="p-2 border border-black" type="text" placeholder="search for a product.." style="width: 80%;">
+    <input class="p-2 border border-black rounded" type="text" placeholder="search for a product.." style="width: 80%;">
     <div class="grid grid-cols-2 mt-10 gap-2 md:grid-cols-3 lg:grid-cols-4">
         <div>
             <img class="inline hover:shadow-xl transform hover:-translate-y-2" src="image/rose-1.png" alt="">
@@ -76,7 +82,10 @@
 </section>
 <!--footer-->
 <section class="bg-green-100 p-11 mt-10 grid grid-cols-1 gap-5 ">
+    <div class="flex text-center">
+    <img class="w-10 h-10" src="image/pngtree-green-logo-image_2296527-removebg-preview.png" alt="logo">
     <h1 class="font-bold text-4xl">Greenden</h1>
+    </div>
     <p>The Standard of lorem the 1500 is represented for those intrest</p>
     <p>@ 2021 Greenday.com</p>
 

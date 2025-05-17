@@ -15,7 +15,7 @@
         <h1 class="text-2xl font-bold">Greenden</h1>
         </div>
         <div>
-        <svg class="w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <svg id="menuicon" class="w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
           
@@ -32,11 +32,28 @@
         </ul>
         </div>
     </nav>
+    <!---close-nav-->
+    <section id="sidenav" class="bg-green-100 fixed top-0 transition-all duration-1000" style="width: 30%;height: 100vh; z-index: 20; right: -50%;">
+        <div class="text-right p-5 text-red-500">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="text-gray-600 flex flex-col items-center gap-4">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">contact</a>
+            </li>
+        </ul>
+    </section>
     <!--home page-->
    <section class="text-center">
     <h1 class="font-bold mt-6 text-3xl p-2">Our Products</h1>
-    <input class="p-2 border border-black rounded" type="text" placeholder="search for a product.." style="width: 80%;">
-    <div class="grid grid-cols-2 mt-10 gap-2 md:grid-cols-3 lg:grid-cols-4">
+    <input id="search" class="p-2 border border-black rounded" type="text" placeholder="search for a product.." style="width: 80%;">
+    <div id="product" class="grid grid-cols-2 mt-10 gap-2 md:grid-cols-3 lg:grid-cols-4">
         <div>
             <img class="inline hover:shadow-xl transform hover:-translate-y-2" src="image/rose-1.png" alt="">
             <h1>Red Rose plant</h1>
@@ -90,5 +107,6 @@
     <p>@ 2021 Greenday.com</p>
 
 </section>
+     <script src="product.js"></script>
 </body>
 </html>

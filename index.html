@@ -10,6 +10,8 @@
     <title>Greenden</title>
 </head>
 <body>
+   
+   
     <!--Responsive navbar-->
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10" >
         <div class="flex gap-0.8">
@@ -17,9 +19,9 @@
         <h1 class="text-2xl font-bold">Greenden</h1>
         </div>
         <div>
-        <svg class="w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <svg id="menuicon" class="w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
+        </svg>
           
         <ul class="gap-5 text-gray-600 hidden md:flex">
             <li>
@@ -34,6 +36,23 @@
         </ul>
         </div>
     </nav>
+     <!---close-nav-->
+     <section id="sidenav" class="bg-green-100 fixed top-0 transition-all duration-1000" style="width: 30%;height: 100vh; z-index: 20; right: -50%;">
+        <div class="text-right p-5 text-red-500">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="text-gray-600 flex flex-col items-center gap-4">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">contact</a>
+            </li>
+        </ul>
+    </section>
     <!---header section-->
     <section class="bg-green-100 p-4 md:p-10 flex justify-around items-center">
         <div>
@@ -145,6 +164,9 @@
         <p>@ 2021 Greenday.com</p>
 
     </section>
+    <script src="index.js">
+    
+    </script>
 
 
 
